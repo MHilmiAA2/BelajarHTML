@@ -1,0 +1,81 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1a1a1a;
+        --text: #f0f0f0;
+    }
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+
+/* Reset dan Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Header dan Navigasi */
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Layout Umum */
+main {
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+/* Formulir */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
