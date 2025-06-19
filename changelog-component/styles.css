@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+/* Changelog Section */
+.changelog {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+.changelog>h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Entry Layout */
+.log-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tanggal */
+.log-date {
+    width: 120px;
+    font-weight: bold;
+    color: #888;
+    flex-shrink: 0;
+}
+
+/* Detail */
+.log-details h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.log-details ul {
+    padding-left: 1.2rem;
+    list-style: disc;
+    color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .log-entry {
+        flex-direction: column;
+    }
+
+    .log-date {
+        width: auto;
+    }
+}
