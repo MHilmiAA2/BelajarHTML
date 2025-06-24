@@ -5,37 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Beranda situs yang menampilkan projek, artikel, dan kontak">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>
-            Kazuhiko
-        </h1>
+        <div class="logo">
+            <img src="" alt="logo">
+            <h3>Your Name</h3>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="projects.html">Projek</a></li>
-                <li><a href="articles.html">Artikel</a></li>
-                <li><a href="contact.html">Kontak</a></li>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Articles</li>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Pengantar</h2>
-            <p>
-                Ini adalah halaman utama dari website sederhana ini.
-            </p>
-        </section>
+        <div class="headline">
+            <h1>Frontend Developer</h1>
+            <p>HTML only with proper layout, no styling</p>
+        </div>
+        <div class="main">
+            <aside class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="#">HTML Only Portofolio</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Quiz App</a></li>
+                    <li><a href="#">Countdown Timer</a></li>
+                    <li><a href="#">Product Upcoming Page</a></li>
+                </ul>
+            </aside>
+            <div class="main-container">
+                <h2>Work Experience</h2>
+                <article>
+                    <h3>roadmap.sh</h3>
+                    <p>Solved all the frontend project</p>
+                    <a href="#">Visit my Profile</a>
+                </article>
+                <article>
+                    <h3>OpenSource Work</h3>
+                    <p>Contributed to 50 opensource projects. Made my own project with 200 GitHub Stars</p>
+                    <a href="#">Visit my GitHub Profie</a>
+                </article>
+            </div>
+            <section class="education">
+                <h2>Education</h2>
+                <p>Gratuated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 session.</p>
+                <p>Courses I took:</p>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Management Systems</li>
+                    <li>Distribute Database Systems</li>
+                    <li>Discreet Mathematics</li>
+                </ul>
+            </section>
+        </div>
+        <div class="reviews-container">
+            <h2>
+                Reviews From my Teachers
+            </h2>
+            <div class="kolom">
+                <div class="review">
+                    <p>John doe was a brilliant student; always stood out with his assignments</p>
+                    <p class="name">Jane Doe Assistent Professor</p>
+                </div>
+                <div class="review">
+                    <p>John doe was a brilliant student; always stood out with his assignments</p>
+                    <p class="name">Jane Doe Assistent Professor</p>
+                </div>
+                <div class="review">
+                    <p>John doe was a brilliant student; always stood out with his assignments</p>
+                    <p class="name">Jane Doe Assistent Professor</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>
-            &copy; 2025 Kazuhiko
-        </p>
+        <p>&copy; all rights reserved 2025</p>
     </footer>
 </body>
 </html>
